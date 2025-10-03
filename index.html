@@ -12,6 +12,18 @@
       table { border-collapse: collapse !important; }
       body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
       a[x-apple-data-detectors], u + #body a, #MessageViewBody a { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+      @media screen and (max-width:600px) {
+        .stack-col, .col-3 {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          border-right: none !important; /* remove dividing line on stacked view */
+        }
+
+        h1 { font-size: 20px !important; }
+        h2 { font-size: 16px !important; }
+        p, li, a { font-size: 14px !important; }
+      }
     </style>
   </head>
   <body id="body" style="margin:0; padding:0; height: 100%;">
@@ -42,6 +54,52 @@
                 <img src="./images/flag.jpg" alt="" style="width:100%; max-width:560px; height:auto; border-radius:8px;" />
               </td>
             </tr>
+
+            <!-- === 3-COLUMN HIGHLIGHTS SECTION === -->
+            <tr>
+              <td style="padding:20px;">
+                <table role="presentation" width="100%" style="border:2px solid #000000;">
+                  <tr>
+                    <!-- Col 1 -->
+                    <td width="33.333%" class="col-3" valign="top" style="padding:12px; font-family: Georgia, 'Times New Roman', Times, serif; color:#000; border-right:2px solid #000000;">
+                      <h2 style="margin:0 0 6px 0; font-size:18px; line-height:1.2;">🔥 Breaking News</h2>
+                      <p style="margin:0 0 8px 0; font-size:14px; line-height:1.5;">
+                        A new “Patriot Tax” proposal is circulating. Critics warn it’s a back-door way to penalize traditional families and small businesses.
+                      </p>
+                      <a href="#"
+                        style="display:inline-block; background-color:#b22222; color:#ffffff; text-decoration:none; padding:8px 12px; border:2px solid #000000; border-radius:6px; font-weight:bold; font-size:13px;">
+                        Read Brief
+                      </a>
+                    </td>
+
+                    <!-- Col 2 -->
+                    <td width="33.333%" class="col-3" valign="top" style="padding:12px; font-family: Georgia, 'Times New Roman', Times, serif; color:#000; border-right:2px solid #000000;">
+                      <h2 style="margin:0 0 6px 0; font-size:18px; line-height:1.2;">📣 Patriot Voices</h2>
+                      <p style="margin:0 0 8px 0; font-size:14px; line-height:1.5;">
+                        “We can’t let Washington silence us.” — A veteran from Ohio. Join thousands sending letters to Congress this week.
+                      </p>
+                      <a href="#"
+                        style="display:inline-block; background-color:#ffffff; color:#000000; text-decoration:none; padding:8px 12px; border:2px solid #000000; border-radius:6px; font-weight:bold; font-size:13px;">
+                        Send Letter
+                      </a>
+                    </td>
+
+                    <!-- Col 3 -->
+                    <td width="33.333%" class="col-3" valign="top" style="padding:12px; font-family: Georgia, 'Times New Roman', Times, serif; color:#000;">
+                      <h2 style="margin:0 0 6px 0; font-size:18px; line-height:1.2;"> Next Step</h2>
+                      <p style="margin:0 0 8px 0; font-size:14px; line-height:1.5;">
+                        Every dollar matters. Chip in today and fuel the fight to defend traditions tomorrow. 
+                      </p>
+                      <a href="#"
+                        style="display:inline-block; background-color:#b22222; color:#ffffff; text-decoration:none; padding:8px 12px; border:2px solid #000000; border-radius:6px; font-weight:bold; font-size:13px;">
+                        Contribute
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- === 3-COLUMN HIGHLIGHTS SECTION END === -->
 
             <tr>
               <td style="padding:20px; color:#000; text-align:center;">
@@ -85,7 +143,7 @@
                 <table role="presentation" width="100%" style="border:2px solid #000000;">
                 <tr>
                     <!-- Left column -->
-                    <td width="50%" style="padding:12px; vertical-align:top; font-family: Georgia, 'Times New Roman', Times, serif; color:#000;">
+                    <td class="stack-col" width="50%" style="padding:12px; vertical-align:top; font-family: Georgia, 'Times New Roman', Times, serif; color:#000;">
                         <h2 style="margin:0 0 8px 0; font-size:20px;">Freedom Briefing: Today’s Threats</h2>
                         <p style="margin:0 0 8px 0;">
                             Radical “woke councils” are quietly inserting new rules into schools and workplaces. They're demanding teachers replace American history lessons with TikTok tutorials on “equitable finger-painting.” 
